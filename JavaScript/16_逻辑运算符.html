@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            逻辑运算符：
+                ！ 非
+                    - 如果对非布尔值进行运算，则会先将其转换为布尔值，然后再取反
+                        可以利用该特点，将其它数据类型转换为布尔值
+                            为任意一个数据类型取两次反，即可将其转换为布尔值
+                
+                && 与
+                    对符号两侧的值进行与运算，并返回结果
+                    JS中的“与”属于短路的“与”，
+                    如果第一个值是false，则不会看第二个值
+
+                
+                || 或
+                    JS中的“或”属于短路的“或”，
+                    如果第一个值是true，则不会检查第二个值
+
+         */
+
+        
+         /*
+            && || 非布尔值的情况
+                - 对于非布尔值进行与或运算时，
+                    会先将其转换为布尔值，然后再运算，并且返回原值
+                    
+                与运算：如果两个值都是true，则返回后边的
+                        如果两个值中有false，则返回靠前的false
+                        总结：如果第一个值是true，则必然返回第二个值，
+                             如果第一个值为false，则直接返回第一个值
+
+                或运算：
+                        如果第一个值是true，则直接返回第一个值
+                        如果第一个值为false，则直接返回第二个值
+         */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

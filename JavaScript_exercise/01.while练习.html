@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 假如投资的年利率为5%，试求从1000增长到5000，需要花费多少年
+        var profit = 1000;
+        var years = 0;
+        while(profit<5000){
+            years += 1;
+            profit = profit*(1+0.05);
+        }
+        console.log("需要花费"+years+"年");
+
+
+        // 打印1-100之间所有7的倍数的个数及总和
+
+        for(var i = 1,count = 0, sum = 0;i <= 100; i++){
+            if(i%7 ==0){
+                count++;
+                sum+=i;
+            }
+        }
+        console.log(count);
+        console.log(sum);
+
+
+        //水仙花数
+        for(var i = 100;i<1000;i++){
+            var hundreds = parseInt(i/100);
+            var decade = parseInt((i%100)/10);
+            var unit = (i%100)%10;
+            if(i == hundreds*hundreds*hundreds + decade*decade*decade + unit*unit*unit){
+                console.log(i);
+            }
+        }
+        console.log("\n");
+
+        // 接收一个数字，并判断是否为质数
+            // 质数：只能被1和它本身整除的数，1既不是质数也不是合数，质数必须是大于1的自然数
+        while(true){
+            var num = prompt("请输入一个数字：");
+            if(num>1 && num<Number.MAX_VALUE){
+                break;
+            }
+            else{
+                alert("非法值，请重新输入！");
+            }
+        }
+
+        for(var j = 1,count = 0;j<=num; j++){
+            if(num%j == 0){
+                count++;
+            }
+        }
+        if(count==2){
+            alert(num+"是质数");
+        }
+        else{
+            alert(num+"不是质数");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

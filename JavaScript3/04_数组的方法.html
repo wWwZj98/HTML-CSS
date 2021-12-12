@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            unshift()
+                - 像数组开头添加一个或多个元素，并返回新的数组长度   
+                - 向前边插入元素以后，其他元素索引会依次调整
+
+            shift()
+                - 删除数组的第一个元素，并将被删除的元素作为返回值返回
+        */
+
+
+        /* 
+            遍历数组
+                一般我们都是使用for循环来遍历
+                JS中还为我们提供了一个方法，用来遍历数组
+                forEach()  
+                    IE8及以下的浏览器均不支持该方法
+        */
+
+        // 创建一个数组
+        var arr = ["daming","LINGl","sam","david","linda"];
+
+        /* 
+            forEach()方法需要一个函数作为参数
+                - 像这种函数，由我们创建但不是我们调用，我们称为回调函数
+                - 数组中有几个元素，函数就会执行几次,每次执行时，浏览器会将遍历到的元素
+                    以实参形式传递进来，我们可以定义形参，来读取这些内容
+                - 浏览器会在回调函数中传递三个参数：
+                    第一个参数，就是当前正在遍历的元素
+                    第二个参数，是当前正在遍历的元素的索引
+                    第三个参数，就是正在遍历的数组
+        */
+
+        arr.forEach(function(value,index,obj){
+            console.log(value);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

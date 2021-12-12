@@ -1,0 +1,58 @@
+{
+  "id": "2868711",
+  "name": "school_icon",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "23880821",
+      "name": "业务流程",
+      "font_class": "yewuliucheng",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "23899970",
+      "name": "学位",
+      "font_class": "xuewei",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "23953034",
+      "name": "产学研合作",
+      "font_class": "chanxueyanhezuo",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "23953036",
+      "name": "咨询服务",
+      "font_class": "zixunfuwu",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "24035281",
+      "name": "书籍",
+      "font_class": "shuji",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "24035283",
+      "name": "学生资料",
+      "font_class": "xueshengziliao",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "24035285",
+      "name": "校园风景",
+      "font_class": "xiaoyuanfengjing",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            border: 10px solid red;
+        }
+
+        .box2{
+            width: 100px;
+            height: 400px;
+            background-color: palevioletred;
+            float: left;
+        }
+        .box3{
+            clear: both;
+        }
+        /* after 伪类  .box1最后一个子元素的下面*/
+        .box1::after{       
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+
+        </div>
+        <!-- <div class="box3"></div> -->
+    </div>
+</body>
+</html>

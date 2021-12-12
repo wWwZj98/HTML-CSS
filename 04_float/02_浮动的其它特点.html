@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            /* 
+                浮动元素不会盖住文字，文字会自动环绕在文字周围，所以可以利用
+                    浮动来设置文字环绕图片的效果
+             */
+            float: left;
+        }
+
+        .box2{
+            background-color: yellowgreen;
+
+            /* 
+                元素设置浮动后，将会从文档流中脱离，从文档流以后，元素的一些特点也会发生变化
+
+                脱离文档流的特点：  
+                    块元素：
+                        1、块元素不再独占页面的一行
+                        2、块元素的宽度和高度默认是被内容撑开
+                    行内元素：
+                        行内元素脱离文档流之后会变成块元素，特点和块元素一样
+                    也就是说，脱离文档流后，不需要再区分块和行内了
+             */
+            float: left;
+        }
+        .box3{
+            background-color: orange;
+        }
+
+        .s1{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: orchid;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="box1"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus iure maxime sequi sint odio accusantium sapiente autem commodi doloribus iste beatae sunt nobis atque iusto quia dignissimos, obcaecati odit perspiciatis.</p> -->
+
+    <!-- <div class="box2">hello</div>
+    <div class="box3">hello</div> -->
+
+    <span class="s1">我是一个span</span>
+</body>
+</html>

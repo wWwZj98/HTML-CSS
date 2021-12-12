@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            运算符也叫操作符
+                通过运算符可以对一个或多个值进行计算
+
+                当对非Number类型的值进行运算时，会将这些值转换为Number然后进行运算 (除了字符串加法)
+                    任何值和 NaN 做运算都是 NaN
+
+                算术运算符
+                    +
+                        如果是一个字符串和任何值进行加法运算时，都会先转换成字符穿，然后进行字符串拼接操作，
+                            会拼成一个字符串并返回
+                        123 + "1" = "1231"
+                        "123" + null = "123null"
+                        "1" + true = "1true"
+
+                        那么，我们就可以利用这一特点，来将一个任意的数据类型转换为String，
+                            只需要为任意的数据类型 + 一个 "" 即可将其转换为String
+                            这是一种隐式的类型转换，有浏览器自动完成，实际上它也是调用String()
+                        
+                    -
+                        进行减法运算，并返回结果
+                    *
+                        对两个值进行乘法运算，并返回结果
+                    /
+                        对两个值进行除法运算，并返回结果
+                    %
+                        取模，取余数
+
+         */
+
+         /* 
+                任何值做 - * / 运算时都会自动转换为Number
+                    可以利用这一特点进行隐式的类型转换，通过为一个值 -0  *1  /1 来将其转换为Number
+                        原理和Number()函数一样
+          */
+        
+
+
+        var a = "1234";
+        var b = null;
+        var result = a+b;
+        console.log(result);
+
+        var c = 123;
+        console.log("c = "+c);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

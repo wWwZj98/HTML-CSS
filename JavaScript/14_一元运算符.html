@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        /*
+             一元运算符 ：只需要一个操作数
+                + 正号  
+                    正号不会对数字产生任何影响
+                - 负号
+                    负号可以对数字进行符号的取反
+                
+                对于非Number值，会先转换为Number，再进行运算
+                这样的话，就可以对一个其他的数据类型使用 +，来将其转换为Number
+                这也是一种隐式类型转换
+                它的原理和Number()函数一样
+         */
+
+        var a = 123;
+        a= -a;
+
+        a = true;
+        a = -a;
+        console.log(a);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

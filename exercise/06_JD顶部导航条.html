@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD顶部导航条</title>
+    <link rel="stylesheet" href="../03_layout/css重置样式/reset.css">
+    <link rel="stylesheet" href="./font_awesome/css/all.css">
+    <style>
+        body {
+            font: 13px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+        }
+
+        /* 外部容器样式 */
+        .outer {
+            height: 30px;
+            background-color: #e3e4e5;
+            margin-top: 100px;
+            border-bottom: 1px #ddd solid;
+        }
+
+        /* 设置字体样式 */
+        .outer a,
+        .outer span,
+        .outer i {
+            color: #999;
+            text-decoration: none;
+        }
+
+        .outer a:hover,
+        .outer .highlight{
+            color: #f10215;
+        }
+        /* 内部容器样式 */
+        .inter {
+            background-color: #e3e4e5;
+            width: 990px;
+            margin: 0 auto;
+            position: relative;
+        }
+        /* 设置left下的小图标 */
+        .left .fas{
+            font-size: 14px;
+            color: #f10215;
+        }
+        /* 设置城市列表 */
+        .left .city_list{
+            display: none;
+            width: 321px;
+            height: 436px;
+            margin-left: -1px;
+            background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            /* 设置绝对定位，使其不占据页面位置 */
+            position: absolute;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+            top: 31px;
+        }
+
+        /* 当鼠标移入left时，让city-list显示 */
+        .left:hover .city_list{
+            display: block;
+        }
+
+        .current-city{
+            padding: 0 10px;
+            border: 1px solid transparent;
+            border-bottom: none;
+
+        }
+
+        .left:hover .current-city{
+            background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            border-bottom: none;
+            padding-bottom: 1px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .left {
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            
+        }
+
+        .right {
+            float: right;
+            line-height: 30px;
+        }
+        .right .shortcut_first{
+            width: 105px;
+            height: 29.6px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        /* 设置分隔线 */
+        .right .line_between{
+            width: 1px;
+            height: 10px;
+            background-color: #ccc;
+            margin: 11px 10px;
+        }
+
+        .right li {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建外部容器 -->
+    <div class="outer">
+        <!-- 创建内部容器 -->
+        <div class="inter">
+            <!-- 左侧菜单 -->
+            <div class="left">
+                <div class="current-city">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <a href="javascript:;">上海</a>
+                </div>
+                <!-- 放置城市的列表 -->
+                <div class="city_list">
+
+                </div>
+
+            </div>
+            <!-- 右侧菜单 -->
+            <ul class="right">
+                <li class="shortcut_first">
+                    <a href="javascript:;">您好请登录</a>
+                    <a class="highlight" href="javascript:;">免费注册</a>
+                </li>
+                <li class="line_between"></li>
+                <li>
+                    <a href="javascript:;">我的订单</a>
+                </li>
+                <li class="line_between"></li>
+                <li>
+                    <a href="javascript:;">我的京东</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line_between"></li>
+                <li>
+                    <a href="javascript:;">京东会员</a>
+                </li>
+                <li class="line_between"></li>
+                <li>
+                    <a class="highlight" href="javascript:;">企业采购</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line_between"></li>
+                <li>
+                    <span>客户服务</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line_between"></li>
+                <li>
+                    <span>网站导航</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line_between"></li>
+                <li>
+                    <span>手机京东</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
